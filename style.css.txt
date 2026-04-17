@@ -1,0 +1,318 @@
+/* --- Global Variables & Resets --- */
+:root {
+    --primary-color: #FF6B6B; /* Child-friendly red/coral */
+    --secondary-color: #4ECDC4; /* Calming teal */
+    --accent-color: #FFE66D; /* Bright yellow */
+    --text-dark: #2D3436;
+    --text-light: #FFFFFF;
+    --bg-light: #F9F9F9;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.bg-light {
+    background-color: var(--bg-light);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+/* --- Typography & Buttons --- */
+.cta-button, .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--accent-color);
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: var(--transition);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.cta-button:hover {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    transform: translateY(-2px);
+}
+
+/* --- 1. Header & Nav --- */
+header {
+    background: var(--text-light);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: var(--transition);
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo a {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--primary-color);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.mobile-menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* --- 2. Hero Section --- */
+.hero {
+    height: 100vh;
+    background: url('hero-placeholder.jpg') center/cover;
+    background-color: var(--secondary-color); /* Fallback */
+    margin-top: 80px; /* Offset for fixed header */
+    display: flex;
+    align-items: center;
+}
+
+.hero-overlay {
+    background: rgba(45, 52, 54, 0.6); /* Dark overlay for text readability */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: var(--text-light);
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* --- Notice Board (Marquee) --- */
+.notice-board {
+    background: var(--primary-color);
+    color: var(--text-light);
+    padding: 10px 0;
+}
+
+.notice-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.notice-title {
+    font-weight: bold;
+    margin-right: 20px;
+    white-space: nowrap;
+    background: var(--text-dark);
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.marquee-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.marquee-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* --- Grids & Cards (Academics, Faculty, Gallery) --- */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: var(--text-light);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: var(--transition);
+    border-bottom: 4px solid var(--secondary-color);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.faculty-img-placeholder, .gallery-item {
+    background: #e0e0e0;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    color: #888;
+}
+
+/* --- Calendar Table --- */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--text-light);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.calendar-table th, .calendar-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.calendar-table th {
+    background: var(--secondary-color);
+    color: var(--text-light);
+}
+
+/* --- Footer --- */
+footer {
+    background: var(--text-dark);
+    color: var(--text-light);
+    padding: 60px 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.social-links a {
+    color: var(--text-light);
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+}
+
+.map-placeholder {
+    background: #555;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide on mobile, handled by JS toggle in real project */
+    }
+    
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .notice-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .notice-title {
+        margin-bottom: 10px;
+    }
+}
