@@ -4,60 +4,255 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P.M.R Nursery School | Nurturing Young Minds</title>
-
-    <!-- CSS LINK -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
 
-<header id="navbar">
-    <div class="container nav-wrapper">
-        <div class="logo">
-            <a href="#">P.M.R <span>Nursery</span></a>
+    <header id="navbar">
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <a href="#">P.M.R <span>Nursery</span></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#academics">Academics</a></li>
+                    <li><a href="#admission">Admissions</a></li> <li><a href="#faculty">Faculty</a></li>
+                    <li><a href="#gallery">Gallery</a></li> <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle"><i class="fas fa-bars"></i></div>
         </div>
+    </header>
 
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#academics">Academics</a></li>
-                <li><a href="#faculty">Faculty</a></li>
-                <li><a href="#notices">Notices</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-
-        <div class="mobile-menu-toggle">
-            <i class="fas fa-bars"></i>
+    <section id="home" class="hero">
+        <div class="hero-overlay">
+            <div class="container hero-content">
+                <h1>Welcome to P.M.R Nursery School</h1>
+                <p>Where learning meets fun, and every child's potential is nurtured with care.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="cta-button">Enroll Now</a>
+                    <a href="#about" class="btn btn-outline">Learn More</a> </div>
+            </div>
         </div>
-    </div>
-</header>
+    </section>
 
-<section id="home" class="hero">
-    <div class="hero-overlay">
-        <div class="container hero-content">
-            <h1>Welcome to P.M.R Nursery School</h1>
-            <p>Where learning meets fun.</p>
-            <a href="#contact" class="cta-button">Enroll Now</a>
+    <section id="notices" class="notice-board">
+        <div class="container">
+            <div class="notice-wrapper">
+                <div class="notice-title"><i class="fas fa-bell"></i> Latest Updates</div>
+                <div class="marquee-container">
+                    <p class="marquee-content">🌟 Admissions open for the 2026-2027 academic session! | 📅 Annual Sports Day scheduled for next month. | 📝 Parent-Teacher meeting on Saturday.</p>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="about">
-    <h2>About School</h2>
-    <p>This is demo content.</p>
-</section>
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>About P.M.R Nursery</h2>
+                <p>Building a strong foundation for lifelong learning.</p>
+            </div>
+            <div class="about-content grid-2-col"> <div class="about-text">
+                    <p>Established with a vision to provide holistic early childhood education, P.M.R Nursery School offers a safe, engaging, and culturally rich environment.</p>
+                    <p>Our mission is to foster curiosity, creativity, and confidence in every child, preparing them for the challenges of tomorrow while letting them enjoy the magic of childhood today.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> Safe & Secure Campus</li>
+                        <li><i class="fas fa-check-circle"></i> Play-way Teaching Method</li>
+                        <li><i class="fas fa-check-circle"></i> Regular Health Checkups</li>
+                    </ul>
+                </div>
+                <div class="about-image-placeholder">
+                    <div class="img-box">School Building Image</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<footer id="contact">
-    <p>© 2026 P.M.R Nursery School</p>
-</footer>
+    <section id="academics" class="academics bg-light section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Curriculum</h2>
+                <p>Interactive and playful learning modules.</p>
+            </div>
+            <div class="grid-container">
+                <div class="card subject-card"><i class="fas fa-book-open fa-2x"></i><h3>Language & Phonics</h3></div>
+                <div class="card subject-card"><i class="fas fa-calculator fa-2x"></i><h3>Basic Mathematics</h3></div>
+                <div class="card subject-card"><i class="fas fa-palette fa-2x"></i><h3>Arts & Crafts</h3></div>
+                <div class="card subject-card"><i class="fas fa-leaf fa-2x"></i><h3>Nature & Science</h3></div>
+                <div class="card subject-card"><i class="fas fa-music fa-2x"></i><h3>Music & Rhymes</h3></div>
+                <div class="card subject-card"><i class="fas fa-running fa-2x"></i><h3>Physical Education</h3></div>
+            </div>
+        </div>
+    </section>
 
-<!-- JS LINK -->
-<script src="script.js"></script>
+    <section id="admission" class="admission-process section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>How to Apply</h2>
+                <p>Simple and transparent admission steps.</p>
+            </div>
+            <div class="grid-container process-steps">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Fill the Form</h3>
+                    <p>Download the application form online or collect it from our campus.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Campus Visit</h3>
+                    <p>Take a tour of our school and meet the teachers with your child.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Confirm Enrollment</h3>
+                    <p>Submit required documents and complete the fee payment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="faculty" class="faculty bg-light section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Meet Our Faculty</h2>
+                <p>Experienced and loving educators.</p>
+            </div>
+            <div class="grid-container faculty-grid">
+                <div class="card faculty-card">
+                    <div class="faculty-img-placeholder">Image</div>
+                    <h3>Mrs. Anita Roy</h3>
+                    <p>Head Teacher</p>
+                </div>
+                <div class="card faculty-card">
+                    <div class="faculty-img-placeholder">Image</div>
+                    <h3>Mr. S. Kumar</h3>
+                    <p>Arts Instructor</p>
+                </div>
+                <div class="card faculty-card">
+                    <div class="faculty-img-placeholder">Image</div>
+                    <h3>Ms. Priya Das</h3>
+                    <p>Nursery Educator</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Parents Say</h2>
+                <p>Real experiences from our P.M.R family.</p>
+            </div>
+            <div class="grid-container testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p>"My daughter loves going to P.M.R Nursery. The teachers are so caring and the environment is perfect for kids."</p>
+                    <h4>- Rahul Sen, Parent</h4>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p>"Excellent facilities and a great curriculum. I have seen massive improvement in my son's communication skills."</p>
+                    <h4>- Sneha Banerjee, Parent</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-calendar bg-light section-padding">
+        <div class="container grid-2-col">
+            
+            <div class="gallery-part">
+                <div class="section-title" style="text-align: left;">
+                    <h2>Life at P.M.R</h2>
+                </div>
+                <div class="grid-container gallery-grid">
+                    <div class="gallery-item">Photo 1</div>
+                    <div class="gallery-item">Photo 2</div>
+                    <div class="gallery-item">Photo 3</div>
+                    <div class="gallery-item">Photo 4</div>
+                </div>
+            </div>
+
+            <div class="calendar-part">
+                <div class="section-title" style="text-align: left;">
+                    <h2>Upcoming Holidays</h2>
+                </div>
+                <div class="table-responsive">
+                    <table class="calendar-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Occasion</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>15 April 2026</td>
+                                <td>Pohela Boishakh</td>
+                            </tr>
+                            <tr>
+                                <td>01 May 2026</td>
+                                <td>May Day</td>
+                            </tr>
+                             <tr>
+                                <td>15 Aug 2026</td>
+                                <td>Independence Day</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="cta-banner section-padding">
+        <div class="container text-center">
+            <h2>Ready to give your child the best start?</h2>
+            <p>Join the P.M.R Nursery family today and watch them grow.</p>
+            <a href="#contact" class="cta-button">Contact Us Now</a>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <h3>P.M.R Nursery School</h3>
+                <p>Nurturing young minds for a brighter future.</p>
+                <br>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Education Lane, City Area, State, 700000</p>
+                <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                <p><i class="fas fa-envelope"></i> info@pmrnursery.com</p>
+                <div class="social-links mt-15">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#admission">Admissions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-map">
+                <div class="map-placeholder">Google Map iFrame Here</div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 P.M.R Nursery School. All Rights Reserved. Designed by a Professional Web Developer.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
