@@ -1,176 +1,63 @@
-!DOCTYPE html
-html lang=en
-head
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>My Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.M.R Nursery School | Nurturing Young Minds</title>
+
+    <!-- CSS LINK -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-    meta charset=UTF-8
-    meta name=viewport content=width=device-width, initial-scale=1.0
-    titleP.M.R Nursery School  Nurturing Young Mindstitle
-    link rel=stylesheet href=style.css
-    link rel=stylesheet href=httpscdnjs.cloudflare.comajaxlibsfont-awesome6.0.0cssall.min.css
-head
-body
+
+<body>
+
+<header id="navbar">
+    <div class="container nav-wrapper">
+        <div class="logo">
+            <a href="#">P.M.R <span>Nursery</span></a>
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#academics">Academics</a></li>
+                <li><a href="#faculty">Faculty</a></li>
+                <li><a href="#notices">Notices</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</header>
+
+<section id="home" class="hero">
+    <div class="hero-overlay">
+        <div class="container hero-content">
+            <h1>Welcome to P.M.R Nursery School</h1>
+            <p>Where learning meets fun.</p>
+            <a href="#contact" class="cta-button">Enroll Now</a>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About School</h2>
+    <p>This is demo content.</p>
+</section>
+
+<footer id="contact">
+    <p>© 2026 P.M.R Nursery School</p>
+</footer>
+
+<!-- JS LINK -->
 <script src="script.js"></script>
+
 </body>
-
-    header id=navbar
-        div class=container nav-wrapper
-            div class=logo
-                a href=#P.M.R spanNurseryspana
-            div
-            nav
-                ul class=nav-links
-                    lia href=#homeHomeali
-                    lia href=#aboutAbout Usali
-                    lia href=#academicsAcademicsali
-                    lia href=#facultyFacultyali
-                    lia href=#noticesNoticesali
-                    lia href=#contactContactali
-                ul
-            nav
-            div class=mobile-menu-togglei class=fas fa-barsidiv
-        div
-    header
-
-    section id=home class=hero
-        div class=hero-overlay
-            div class=container hero-content
-                h1Welcome to P.M.R Nursery Schoolh1
-                pWhere learning meets fun, and every child's potential is nurtured with care.p
-                a href=#contact class=cta-buttonEnroll Nowa
-            div
-        div
-    section
-
-    section id=notices class=notice-board
-        div class=container
-            div class=notice-wrapper
-                div class=notice-titleLatest Updatesdiv
-                div class=marquee-container
-                    p class=marquee-content🌟 Admissions open for the 2026-2027 academic session!  📅 Annual Sports Day scheduled for next month.  📝 Parent-Teacher meeting on Saturday.p
-                div
-            div
-        div
-    section
-
-    section id=about class=about section-padding
-        div class=container
-            div class=section-title
-                h2About P.M.R Nurseryh2
-                pBuilding a strong foundation for lifelong learning.p
-            div
-            div class=about-content
-                pEstablished with a vision to provide holistic early childhood education, P.M.R Nursery School offers a safe, engaging, and culturally rich environment. Our mission is to foster curiosity, creativity, and confidence in every child, preparing them for the challenges of tomorrow while letting them enjoy the magic of childhood today.p
-            div
-        div
-    section
-
-    section id=academics class=academics bg-light section-padding
-        div class=container
-            div class=section-title
-                h2Our Curriculumh2
-                pInteractive and playful learning modules.p
-            div
-            div class=grid-container
-                div class=card subject-cardh3Language & Phonicsh3div
-                div class=card subject-cardh3Basic Mathematicsh3div
-                div class=card subject-cardh3Arts & Craftsh3div
-                div class=card subject-cardh3Nature & Scienceh3div
-                div class=card subject-cardh3Music & Rhymesh3div
-                div class=card subject-cardh3Physical Educationh3div
-            div
-        div
-    section
-
-    section id=faculty class=faculty section-padding
-        div class=container
-            div class=section-title
-                h2Meet Our Facultyh2
-                pExperienced and loving educators.p
-            div
-            div class=grid-container faculty-grid
-                div class=card faculty-card
-                    div class=faculty-img-placeholderImagediv
-                    h3Mrs. Anita Royh3
-                    pHead Teacherp
-                div
-                div class=card faculty-card
-                    div class=faculty-img-placeholderImagediv
-                    h3Mr. S. Kumarh3
-                    pArts Instructorp
-                div
-                div class=card faculty-card
-                    div class=faculty-img-placeholderImagediv
-                    h3Ms. Priya Dash3
-                    pNursery Educatorp
-                div
-            div
-        div
-    section
-
-    section class=gallery bg-light section-padding
-        div class=container
-            div class=section-title
-                h2Life at P.M.Rh2
-            div
-            div class=grid-container gallery-grid
-                div class=gallery-itemPhoto 1div
-                div class=gallery-itemPhoto 2div
-                div class=gallery-itemPhoto 3div
-                div class=gallery-itemPhoto 4div
-            div
-        div
-    section
-
-    section class=calendar section-padding
-        div class=container
-            div class=section-title
-                h2Holiday Calendarh2
-            div
-            div class=table-responsive
-                table class=calendar-table
-                    thead
-                        tr
-                            thDateth
-                            thOccasionth
-                            thDayth
-                        tr
-                    thead
-                    tbody
-                        tr
-                            td15 April 2026td
-                            tdPohela Boishakhtd
-                            tdWednesdaytd
-                        tr
-                        tbody
-                table
-            div
-        div
-    section
-
-    footer id=contact
-        div class=container footer-grid
-            div class=footer-info
-                h3P.M.R Nursery Schoolh3
-                pi class=fas fa-map-marker-alti 123 Education Lane, City Area, State, 700000p
-                pi class=fas fa-phonei +91 98765 43210p
-                pi class=fas fa-envelopei info@pmrnursery.comp
-                div class=social-links
-                    a href=#i class=fab fa-facebookia
-                    a href=#i class=fab fa-instagramia
-                div
-            div
-            div class=footer-map
-                div class=map-placeholderGoogle Map iFrame Herediv
-            div
-        div
-        div class=footer-bottom
-            p&copy; 2026 P.M.R Nursery School. All Rights Reserved. Designed by a Professional Web Developer.p
-        div
-    footer
-
-    script src=script.jsscript
-body
-html
+</html>
